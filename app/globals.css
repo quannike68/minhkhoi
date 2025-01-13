@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,14 +8,52 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --maincolor : #975c3e;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+} */
+
+@layer utilities {
+
+  .font-oswald {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    
+  }
+
+  .font-roboto {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+  }
+
+  .font-roboto-700 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+  }
+ 
+  .btn {
+    height: 150px;
+    width: 200px;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    background: var(--maincolor);
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .borderuser {
+    border: 2px solid #575757;
+    border-radius: 50%;
+  }
 }
+
+
 
 body {
   color: var(--foreground);
