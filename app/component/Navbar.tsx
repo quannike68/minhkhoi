@@ -39,22 +39,9 @@ const Navbar = () => {
   }, [activeIndex]);
 
   return (
-    <nav className="flex border-orange-200 text-black w-full justify-between px-4 py-5 static shadow-lg" >
+    <nav className="flex  text-black w-full justify-between px-4 py-5 static shadow-lg" >
       <section className="flex items-center w-full justify-between">
         <div className="flex items-center">
-          {/* <div className="border-r border-gray-50">
-            <Link href="/">
-              <Image
-                className="filter"
-                src="/logo.jpg"
-                alt="logo"
-                width={80}
-                height={80}
-              />
-            </Link>
-          </div> */}
-
-          {/* Menu Items */}
           <div className="hidden w-full xl:flex items-center gap-4 ml-5 font-roboto-700">
             {menuItems.map((item, index) => (
               <div key={index} className="relative group px-2 py-3 ">
